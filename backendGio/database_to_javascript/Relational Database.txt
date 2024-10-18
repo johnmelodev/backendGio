@@ -1,0 +1,42 @@
+Postgres MySql SqlServer Oracle
+
+se duas pessoas tentam atualizar os dados ao mesmo tempo, ele trata isso
+
+conjunto de tabelas
+linhas = registros (joao)
+coluna= campo (nome)
+
+TABELA:
+estrutura que armazena dados
+nome unico: Produtos
+linhas e colunas
+Id: int
+nome: Carl
+
+COLUNA: 
+nome
+atributo: xxxx
+
+DADOS:
+linha após 
+xxxx: dado
+
+
+Table Alunos {
+  id integer {primary key}
+  nome varchar(100)
+  cep char(8)
+  endereco varchar(100)
+  idade integer
+  data_nascimento date
+  ativo boolean
+}
+
+RELATIONAL
+
+Table Notas {
+  id integer {primary key}
+  id_aluno integer
+  valor integer
+  disciplina varchar(30)
+}

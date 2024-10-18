@@ -1,0 +1,4 @@
+date (Data)
+time (horario sem fuso horario)
+timestamp (data e hora com fuso horario) = para ter suporte e adaptar para o horario do usuario
+interval (intervalo de tempo)

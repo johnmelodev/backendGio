@@ -1,0 +1,38 @@
+Connection String: 
+Cadeica de caracteres com informacoes necessarias para conectar a o banco de dados.
+EX:
+"Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;"
+
+---------------------------------------------------------------------------------
+Connection Pool: 
+Uma colecao de conexoes a banco de dados predefinidas e reutilizaveis.
+EX:
+HikariConfig config = new HikariConfig();
+config.setJdbcUrl("jdbc:mysql://localhost:3306/simpsons");
+config.setUsername("bart");
+config.setPassword("51mp50n");
+HikariDataSource ds = new HikariDataSource(config);
+
+---------------------------------------------------------------------------------
+Models: 
+os modelos de Sequelize representam as tabelas do banco de dados como objetos javascript.
+EX:
+  firstName: {
+    type: DataTypes.STRING,
+    allowNull: false}
+
+---------------------------------------------------------------------------------
+Migrations: 
+Scripts que permitem controlar e automatizar as alteracoes nos esquemas dos banco de dados. Como criar tabelas e adicionar e remover colunas.
+EX:
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.addColumn('Users', 'email', {
+      type: Sequelize.STRING,
+      allowNull: false,
+    });
+  },
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.removeColumn('Users', 'email');
+  }
+};

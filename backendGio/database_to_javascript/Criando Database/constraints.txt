@@ -1,0 +1,8 @@
+Unique constraints
+garante que os valores de uma coluna nao sejam unicos em uma tabela. Exemplo um email nao sera repetidamente colocado em um fluxo
+
+Check constraints
+Permite criar funcoes logicas
+
+Not Null constraint
+nao pode inserir um novo usuario sem colocar um valor atribuido

@@ -1,0 +1,3 @@
+Object Relational Mapping
+
+Sequelize: um ORM moderno para Node.js funcionam a partir de promises, facilitam a interacao de banco de dados relacionais como 

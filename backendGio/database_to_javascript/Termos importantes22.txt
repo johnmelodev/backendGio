@@ -1,0 +1,31 @@
+Associations: 
+As associacoes definem os relacionamentos entre modelos
+EX:
+// Definindo modelos
+const User = sequelize.define('User', { /* atributos */ });
+const Project = sequelize.define('Project', { /* atributos */ });
+
+// Criando uma associação
+User.hasMany(Project);
+
+---------------------------------------------------------------------------------
+Metodo Create: 
+Usado para criar novos registros no banco de dados.
+EX:
+User.create({ firstName: "John", lastName: "Doe" });
+
+---------------------------------------------------------------------------------
+Metodo FindAll: 
+Usado para consultar registros no banco de dados com base em criterios especificos
+EX:
+User.findAll({ where: { lastName: "Doe" } });
+
+---------------------------------------------------------------------------------
+Metodo update e destroy: : 
+Atualizar e registrar no banco de dados
+EX:
+// Atualizar
+User.update({ lastName: "Smith" }, { where: { firstName: "John" } });
+
+// Destruir
+User.destroy({ where: { lastName: "Smith" } });

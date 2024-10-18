@@ -1,0 +1,12 @@
+integer (numeros inteiros)
+numeric (numeros decimais)
+
+
+
+
+
+
+
+
+real (numeros de pontos flutuantes de precisao simples)
+double precision (numeros de pontos flutuantes de dupla precisao)

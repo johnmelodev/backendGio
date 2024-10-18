@@ -1,0 +1,3 @@
+character varying (cadeia de caracters variavel)(usa mais processamento 2 vezes que o fixo)
+character (cadeia de caracters fixa)
+text (texto de tamanho variavel)
